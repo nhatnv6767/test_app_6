@@ -5,4 +5,8 @@ class PagesController < ApplicationController
     # lúc này đây ta chỉ cần định nghĩa không và tạo 1 file home.html.erb trong views/pages là được
 
   end
+
+  def about
+    
+  end
 end
