@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TestApp6</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+<!--    application ở đây chỉ đến việc các css (tên file) trong thư mục assets/stylesheets -->
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+<!--  đây là nơi tất cả các chế độ xem, bất kể tệp nào chúng ta tạo trong thư mục views này sẽ được hiển thị ở đây,
+nên mặc dù ta đang tạo các tệp riêng biệt, chúng vẫn được phân phối qua khu vực này của tệp này, và do đó
+theo mặc định, tất cả những chế độ xem có quyền truy cập vào các stylesheet và javascript giống nhau, chúc năng mà ta
+xây dựng cho ứng dụng của mình và điều này sẽ làm cho ý nghĩa hơn khi ta làm việc với nó-->
+    <%= yield %>
+  </body>
+</html>
